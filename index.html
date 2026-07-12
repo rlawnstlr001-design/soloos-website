@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoloOS — 아이디어가 시스템이 되는 가장 빠른 길</title>
+<meta name="description" content="SoloOS는 제조업 AI 자동 견적 솔루션 QuoteAI를 시작으로, SaaS·판매형 솔루션·시스템 구축을 만드는 소프트웨어 컴퍼니입니다.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ 고정 내비게이션 (스크롤 후 등장) ═══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><span class="logo-dot"></span>SoloOS</a>
+    <div class="nav-links">
+      <a href="#product">제품</a>
+      <a href="#services">서비스</a>
+      <a href="#process">프로세스</a>
+      <a href="#contact" class="nav-cta">프로젝트 문의</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ 히어로: 스크롤 스크럽 애니메이션 (300vh 트랙 + sticky 스테이지) ═══ -->
+<div id="hero-track">
+  <section id="hero-stage" aria-label="SoloOS 인트로">
+    <!-- 배경 씬 -->
+    <div id="hero-bg">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- 초기 워드마크 (이미지 씬) -->
+    <div id="hero-intro">
+      <h1 id="wordmark">Solo<span>OS</span></h1>
+      <p id="hero-tag">반복 업무를 시스템으로 바꾸는 소프트웨어 컴퍼니</p>
+      <div id="scroll-hint">
+        <span>스크롤하여 시작</span>
+        <div class="mouse"><div class="wheel"></div></div>
+      </div>
+    </div>
+
+    <!-- 후킹 애니메이션 씬: 문서들 → 기어 → 견적서 -->
+    <div id="hook-scene">
+      <div class="doc doc1">📄<small>도면.dwg</small></div>
+      <div class="doc doc2">📊<small>BOM.xlsx</small></div>
+      <div class="doc doc3">📋<small>RFQ.pdf</small></div>
+
+      <svg id="gear" viewBox="0 0 100 100" aria-hidden="true">
+        <path fill="url(#gearGrad)" d="M50 8l6 12 13-3 3 13 12 6-6 12 9 10-10 9 3 13-13 3-3 13-12-5-10 9-9-10-13 3-3-13-13-3 5-12-9-10 10-9-3-13 13-3 3-13 12 6z"/>
+        <circle cx="50" cy="50" r="16" fill="#0b0d17"/>
+        <defs><linearGradient id="gearGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/>
+        </linearGradient></defs>
+      </svg>
+
+      <div id="quote-card">
+        <div class="qc-head"><span class="qc-title">견 적 서</span><span class="qc-badge">AI 자동 생성</span></div>
+        <div class="qc-row"><span>모터 하우징 커버 × 20,000</span><span>₩38,240,000</span></div>
+        <div class="qc-row"><span>베어링 브라켓 × 12,000</span><span>₩21,180,000</span></div>
+        <div class="qc-row"><span>커넥터 씰 × 50,000</span><span>₩41,760,000</span></div>
+        <div class="qc-total"><span>합계</span><span id="qc-amount">₩0</span></div>
+        <div id="qc-stamp">3분<br>완성</div>
+      </div>
+
+      <p id="hook-caption">몇 시간 걸리던 견적서가, <b>3분</b>이면 나옵니다.</p>
+    </div>
+
+    <!-- 마지막 헤드라인 -->
+    <div id="hero-final">
+      <h2>아이디어가 <em>시스템</em>이 되는<br>가장 빠른 길</h2>
+      <p>SoloOS는 제조업 AI 견적을 시작으로, 당신의 업무를 소프트웨어로 만듭니다.</p>
+      <a href="#product" class="btn-primary">제품 살펴보기 ↓</a>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ 대표 제품 ═══ -->
+<section id="product" class="section">
+  <p class="eyebrow reveal">FLAGSHIP PRODUCT</p>
+  <h2 class="section-title reveal">QuoteAI — 제조업 AI 자동 견적</h2>
+  <p class="section-sub reveal">BOM·도면·RFQ를 올리면 AI가 부품을 추출하고 원가를 산출해<br>바로 보낼 수 있는 전문 견적서를 만들어 드립니다.</p>
+
+  <!-- CSS로 그린 제품 목업 -->
+  <div class="browser-mock reveal">
+    <div class="bm-bar"><span></span><span></span><span></span><div class="bm-url">quoteai.soloos.kr</div></div>
+    <div class="bm-body">
+      <div class="bm-side">
+        <div class="bm-side-item active">📊 대시보드</div>
+        <div class="bm-side-item">✨ 새 견적 (AI)</div>
+        <div class="bm-side-item">📄 견적 관리</div>
+        <div class="bm-side-item">🗂️ 승인</div>
+      </div>
+      <div class="bm-main">
+        <div class="bm-kpis">
+          <div class="bm-kpi"><small>전체 견적</small><b>₩8.7억</b></div>
+          <div class="bm-kpi"><small>수주 확정</small><b>₩6.5억</b></div>
+          <div class="bm-kpi"><small>평균 마진</small><b>15.2%</b></div>
+        </div>
+        <div class="bm-chart">
+          <div style="height:34%"></div><div style="height:52%"></div><div style="height:41%"></div>
+          <div style="height:68%"></div><div style="height:57%"></div><div class="hot" style="height:88%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature reveal"><span class="f-icon">🤖</span><h3>AI 부품 추출</h3><p>Excel·CSV·PDF 문서에서 부품명, 수량, 재질, 공정, 리스크를 자동으로 읽어냅니다.</p></div>
+    <div class="feature reveal"><span class="f-icon">🧮</span><h3>원가 자동 산출</h3><p>회사 요율(재질 단가·노무·장비)을 등록하면 견적 금액이 실시간 계산됩니다.</p></div>
+    <div class="feature reveal"><span class="f-icon">📄</span><h3>문서 자동 생성</h3><p>PDF·Excel·PPT 견적서와 제안서를 클릭 한 번으로. 버전 이력까지 자동 관리.</p></div>
+    <div class="feature reveal"><span class="f-icon">🔒</span><h3>온프레미스 옵션</h3><p>로컬 AI 엔진으로 도면·견적 데이터가 사내 밖으로 나가지 않는 구축형을 지원합니다.</p></div>
+  </div>
+</section>
+
+<!-- ═══ 서비스 ═══ -->
+<section id="services" class="section dark">
+  <p class="eyebrow reveal">WHAT WE BUILD</p>
+  <h2 class="section-title reveal">SaaS부터 구축형까지,<br>필요한 형태로 만듭니다</h2>
+  <div class="service-grid">
+    <div class="service reveal">
+      <div class="s-num">01</div>
+      <h3>SaaS 개발</h3>
+      <p>구독형 웹 서비스를 기획부터 배포까지. 멀티테넌트 설계, 결제 연동, 요금제 시스템을 포함한 완성형 제품을 만듭니다.</p>
+      <ul><li>멀티테넌트 아키텍처</li><li>구독 결제·요금제</li><li>관리자·권한 시스템</li></ul>
+    </div>
+    <div class="service reveal">
+      <div class="s-num">02</div>
+      <h3>판매형 솔루션</h3>
+      <p>고객사 서버에 설치하는 패키지 소프트웨어. 보안이 중요한 제조·금융 고객을 위한 온프레미스 구축을 지원합니다.</p>
+      <ul><li>온프레미스 설치형</li><li>로컬 AI 엔진 탑재</li><li>연 라이선스 모델</li></ul>
+    </div>
+    <div class="service reveal">
+      <div class="s-num">03</div>
+      <h3>시스템 구축·자동화</h3>
+      <p>엑셀과 수작업으로 돌아가는 업무를 분석해 자동화 시스템으로 전환합니다. AI 문서 처리, 워크플로우 자동화 전문.</p>
+      <ul><li>업무 프로세스 분석</li><li>AI 문서 자동 처리</li><li>기존 시스템 연동</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 프로세스 ═══ -->
+<section id="process" class="section">
+  <p class="eyebrow reveal">HOW WE WORK</p>
+  <h2 class="section-title reveal">4주 안에 동작하는 것을 보여드립니다</h2>
+  <div class="process-line reveal">
+    <div class="p-step"><div class="p-dot">1</div><h4>진단</h4><p>업무 흐름을 분석하고<br>자동화 지점을 찾습니다</p></div>
+    <div class="p-step"><div class="p-dot">2</div><h4>MVP</h4><p>핵심 기능만 담은<br>동작 버전을 만듭니다</p></div>
+    <div class="p-step"><div class="p-dot">3</div><h4>검증</h4><p>실무자가 직접 쓰며<br>현장에서 다듬습니다</p></div>
+    <div class="p-step"><div class="p-dot">4</div><h4>확장</h4><p>SaaS 또는 구축형으로<br>본격 운영을 시작합니다</p></div>
+  </div>
+  <div class="stats reveal">
+    <div class="stat"><b data-count="3">0</b><span>분 — 견적서 생성 시간</span></div>
+    <div class="stat"><b data-count="90">0</b><span>% — 반복 업무 절감 목표</span></div>
+    <div class="stat"><b data-count="4">0</b><span>주 — 첫 MVP 전달</span></div>
+  </div>
+</section>
+
+<!-- ═══ 문의 ═══ -->
+<section id="contact" class="section dark contact">
+  <h2 class="section-title reveal">반복되고 있는 업무가 있나요?</h2>
+  <p class="section-sub reveal">어떤 업무든 좋습니다. 15분 통화로 자동화 가능성을 진단해 드립니다.</p>
+  <a class="btn-primary big reveal" href="mailto:contact@soloos.kr?subject=[SoloOS] 프로젝트 문의">📮 contact@soloos.kr 로 문의하기</a>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <span class="nav-logo"><span class="logo-dot"></span>SoloOS</span>
+    <p>© 2026 SoloOS. 반복 업무를 시스템으로 바꾸는 소프트웨어 컴퍼니.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
